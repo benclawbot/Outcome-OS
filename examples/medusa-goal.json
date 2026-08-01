@@ -1,0 +1,21 @@
+{
+  "title": "Medusa issue-to-merge completion",
+  "objective": "Select one open Medusa issue without an implementation PR, implement the bounded change, validate the complete relevant repository surface, merge it into main, and close the linked issue only when its acceptance criteria are evidenced.",
+  "repository": "benclawbot/Medusa",
+  "confidence_threshold": 0.9,
+  "criteria": [
+    "The chosen issue is open, has no active implementation PR, and has a bounded definition of done",
+    "The implementation covers the accepted scope without unrelated changes",
+    "Targeted tests and the relevant full-workspace qualification pass or any resource failure is explicitly documented",
+    "All required GitHub checks pass and no actionable review thread remains",
+    "The PR is merged into main",
+    "The linked issue is closed with exact implementation and validation evidence"
+  ],
+  "operating_rules": [
+    "Work one issue at a time",
+    "Inspect all failures from a validation run before changing code",
+    "Do not silently retry linker or resource failures",
+    "Do not claim completion while a required workflow is pending",
+    "Treat live external evidence slices as separate acceptance criteria when an issue requires them"
+  ]
+}
