@@ -1,0 +1,23 @@
+{
+  "backlog": [
+    {
+      "stable_id": "MEDUSA-QUALIFY-001",
+      "summary": "Qualify the full workspace and record any linker/resource boundary",
+      "priority": "critical",
+      "acceptance_criteria": [
+        "All validation commands and exact results are recorded",
+        "No failure is silently retried or omitted"
+      ]
+    },
+    {
+      "stable_id": "MEDUSA-LIVE-002",
+      "summary": "Capture the bounded live microphone-to-assistant-audio evidence slice",
+      "priority": "high",
+      "acceptance_criteria": [
+        "Microphone input is transcribed",
+        "Assistant audio is returned",
+        "Evidence is attached to the linked issue"
+      ]
+    }
+  ]
+}
