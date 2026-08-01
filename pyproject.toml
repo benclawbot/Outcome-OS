@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "outcome-os"
+version = "1.0.0"
+description = "Evidence-backed execution control for AI-assisted project work"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "BenClawBot"}]
+keywords = ["ai", "project-management", "verification", "automation", "github"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[project.scripts]
+outcome-os = "outcome_os:main"
+outcome-os-init-file = "profile_bootstrap:main"
+
+[tool.setuptools]
+py-modules = ["outcome_os", "profile_bootstrap"]
