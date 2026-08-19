@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/outcome-os-banner.svg" alt="Outcome OS" width="100%" />
+</p>
+
 # Outcome OS
 
 **Evidence-backed execution control for AI-assisted project work.**
